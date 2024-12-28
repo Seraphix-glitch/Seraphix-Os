@@ -1,0 +1,27 @@
+#!/bin/bash
+echo Enter first number:
+read num1
+echo Enter second number:
+read num2
+echo Choose an operation:
+echo 1. Addition
+echo 2. Subtraction
+echo 3. Multiplication
+read choice
+case $choice in
+ 1)
+ result=$((num1 + num2))
+ echo The sum is: $result
+ ;;
+ 2)
+ result=$((num1 - num2))
+ echo The difference is: $result
+ ;;
+ 3)
+ result=$((num1 * num2))
+ echo The product is: $result
+ ;;
+ *)
+ echo Invalid choice
+ ;;
+Esac

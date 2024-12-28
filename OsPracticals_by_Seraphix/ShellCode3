@@ -1,0 +1,12 @@
+#!/bin/bash
+echo Choose an option:
+echo 1. Print Current Working Directory
+echo 2. List files in the current directory
+echo 3. Print current time
+read choice
+case $choice in
+ 1)pwd;;
+ 2)ls -ldr;;
+ 3)date;;
+ *)echo Invalid choice;;
+esac 
